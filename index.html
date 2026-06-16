@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio Web Developer Junior</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#accueil">
+          <img src="images/logo.png" alt="Logo Nabil" class="nav-logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#apropos">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#competences">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projets">Mes projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="btn btn-outline-green">
+          <i class="fa-solid fa-download fa-beat fa-xs slow-icon"></i>
+          Télécharger CV
+        </a>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h1>
+              Salut ! Je suis <span class="text-green">Manouach Nabil</span>
+            </h1>
+
+            <h2>Développeur Web Junior</h2>
+
+            <p>
+              Je crée des sites web modernes avec WordPress, PHP et JavaScript
+            </p>
+
+            <div class="btn-gap">
+              <a href="#projets" class="btn btn-green">
+                <i class="fa-solid fa-code fa-beat fa-xs slow-icon-h"></i>
+                Voir mes projets
+              </a>
+
+              <a href="#contact" class="btn btn-outline-green">
+                <i class="fa-solid fa-phone fa-beat fa-xs slow-icon"></i>
+                Me contacter
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <img
+              src="images/avatar.png"
+              alt="Développeur Web"
+              class="hero-avatar"
+            />
+          </div>
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+      <div class="mouse-down">
+        <lottie-player
+          src="js/mouse-down.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        >
+        </lottie-player>
+      </div>
+    </section>
+
+    <section id="apropos">
+      <div class="container">
+        <!-- En-tête -->
+        <p class="text-green label-apropos">À propos</p>
+        <h2>
+          Qui se<br />cache derrière<br />le
+          <span class="text-green">code ?</span>
+        </h2>
+        <div class="row mt-5 mb-5">
+          <div class="col-lg-4 mb-4">
+            <h3>Manouach Nabil</h3>
+            <p class="apropos-role">
+              Développeur web junior<br />Bruxelles, Belgique
+            </p>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="section-apropos">
+              <span class="text-green tag-apropos">Formation</span>
+              <p><strong>
+                ASBL FIJ — Développeur web (2026)
+              </p></strong>
+              <p>
+                Une formation complète couvrant le cycle entier du développement
+                web : création de thèmes WordPress en PHP, dynamisation du
+                front-end avec JavaScript, jQuery et AJAX, référencement SEO et
+                sécurisation de sites.
+              </p>
+            </div>
+
+            <div class="section-apropos">
+              <span class="text-green tag-apropos">Approche</span>
+              <p><strong>
+                Du HTML à la base de données — sans raccourcis
+              </p></strong>
+              <p>
+                J'ai appris à construire des thèmes WordPress de zéro à partir
+                de fichiers HTML/CSS bruts — pas de page builder, pas de
+                template. Ça m'a donné une vraie rigueur dans l'intégration
+                responsive et Flexbox.
+              </p>
+            </div>
+
+            <div class="section-apropos">
+              <span class="text-green tag-apropos">Aujourd'hui</span>
+              <p><strong>
+                Prêt pour une première expérience
+              </p></strong>
+              <p>
+                Je cherche un environnement où mettre en pratique ce que j'ai
+                appris — stage, alternance ou freelance. Disponible
+                immédiatement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Les 3 piliers -->
+        <div class="diviseur-apropos">
+          <span>Mes 3 piliers</span>
+        </div>
+
+        <!-- Piliers -->
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="carte-apropos">
+              <i class="fas fa-code fa-xl"></i>
+              <h3>Code propre</h3>
+              <p>
+                Thèmes WordPress construits à la main en PHP, plugins
+                personnalisés — du code maintenable et bien documenté.
+              </p>
+              <span class="badges-apropos">PHP · JS · WordPress</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="carte-apropos">
+              <i class="fas fa-laptop-mobile fa-xl"></i>
+              <h3>Design responsive</h3>
+              <p>
+                Interfaces pensées mobile-first avec Flexbox et Bootstrap —
+                adaptées à tous les appareils.
+              </p>
+              <span class="badges-apropos">Flexbox · Bootstrap · CSS</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="carte-apropos">
+              <i class="fas fa-chart-line fa-xl"></i>
+              <h3>SEO & sécurité</h3>
+              <p>
+                Référencement et sécurisation WordPress pensés dès le départ —
+                pas en correctif.
+              </p>
+              <span class="badges-apropos">SEO · Sécurité WordPress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section id="stats">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-4">
+            <p class="stat-nombre text-green">6+</p>
+            <p>Technologies apprises</p>
+          </div>
+
+          <div class="col-4">
+            <p class="stat-nombre text-green">1</p>
+            <p>Formation certifiante</p>
+          </div>
+
+          <div class="col-4">
+            <p class="stat-nombre text-green">100%</p>
+            <p>Disponible</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
