@@ -127,13 +127,13 @@ position: absolute;
 }
 
 .label-apropos {
-  font-size: 11px;
-  letter-spacing: px;
+  font-size: 20px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .tag-apropos {
-  font-size: 11px;
+  font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
   display: block;
@@ -141,18 +141,19 @@ position: absolute;
 }
 
 .section-apropos {
+  padding-left: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #1a1a1a;
-  margin-bottom: 20px;
-}
-
-.section-apropos:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 50px;
+  border-left: 1px solid white;
+  
 }
 
 .diviseur-apropos {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--neon-green);
   display: flex;
   align-items: center;
   gap: 16px;
@@ -165,14 +166,6 @@ position: absolute;
   flex: 1;
   height: 1px;
   background: #1a1a1a;
-}
-
-.diviseur-apropos span {
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #444;
-  white-space: nowrap;
 }
 
 .carte-apropos {
@@ -188,7 +181,7 @@ position: absolute;
 }
 
 .carte-apropos:hover {
-  border-color: rgba(0, 255, 163, 0.3);
+  border: 2px solid var(--neon-green);
 }
 
 .carte-apropos i {
@@ -204,6 +197,9 @@ position: absolute;
   border-radius: 4px;
   margin-top: auto;
   align-self: flex-start;
+}
+.carte-apropos:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 163, 0.15);
 }
 
 /* ===============
