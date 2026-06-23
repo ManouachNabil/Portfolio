@@ -201,19 +201,3 @@ position: absolute;
 .carte-apropos:hover {
   box-shadow: 0 0 20px rgba(0, 255, 163, 0.15);
 }
-
-/* ===============
-    SECTION STATS
-   =============== */
-
-#stats {
-  padding: 60px 0;
-  background-color: #0a0a0a;
-  border-top: 1px solid #1a1a1a;
-}
-
-.stat-nombre {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1;
-}
