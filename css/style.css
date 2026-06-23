@@ -201,3 +201,46 @@ position: absolute;
 .carte-apropos:hover {
   box-shadow: 0 0 20px rgba(0, 255, 163, 0.15);
 }
+
+/* =========================
+      SECTION COMPÉTENCES
+   ========================= */
+
+.nuage-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.item-techno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.item-techno img {
+  width: auto;
+  height: 60px;
+  max-width: 80px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.item-techno span {
+  font-family: monospace;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.categorie-titre {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+}
