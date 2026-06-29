@@ -233,7 +233,7 @@ position: absolute;
 .item-techno span {
   font-family: monospace;
   font-size: 12px;
-  color: #fff;
+  color: white;
   letter-spacing: 1px;
 }
 
@@ -243,4 +243,43 @@ position: absolute;
   text-align: center;
   color: white;
   margin-bottom: 25px;
+}
+
+/* =========================
+      SECTION MES PROJETS
+   ========================= */
+
+.carte-projets {
+  background-color: #121214;
+  border: 1px solid var(--neon-green);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.carte-projets h3, .carte-projets p {
+  margin: 10px 0;
+}
+
+.widget-meteo {
+  background-color: #050505;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.widget-meteo div:first-child {
+  color: gray;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.widget-meteo div:last-child {
+  color: var(--neon-green);
+  text-transform: capitalize;
+  font-size: 15px;
 }
