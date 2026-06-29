@@ -25,7 +25,8 @@ $(function(){
     }
 
     function showMeteo(data) {
-        var htmlWidget = `
+        var htmlWidget = 
+        `
             <div>${data.name}, ${data.sys.country}</div>
             <div style="display: flex; align-items: center; gap: 15px; font-size: 32px; font-weight: bold;">
                 ${Math.round(data.main.temp)}°C
