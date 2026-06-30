@@ -322,7 +322,7 @@
             <div class="carte-projets">
               <div class="badges">
                 <span class="text-green">API LIVE</span>
-                <span class="text-green">● LIVE</span>
+                <span class="badges-projet text-green">● LIVE</span>
               </div>
               <h3>Widget Météo</h3>
               <p>Intégration OpenWeatherMap en jQuery avec cache cookies</p>
@@ -333,12 +333,12 @@
             <div class="carte-projets">
               <div class="badges">
                 <span class="text-green">CMS</span>
-                <span class="text-green">● LOCAL</span>
+                <span class="badges-projet text-green">● LOCAL</span>
               </div>
               <h3>Vert-tige</h3>
               <p>Création d'un site complet sous WordPress avec Elementor.</p>
 
-              <div class="aperçu-projet">
+              <div>
                 <a
                   target="_blank"
                   href="https://st9.fij-dev.be/fleuriste-cms/fleuriste-cms/"
@@ -355,14 +355,14 @@
             <div class="carte-projets">
               <div class="badges">
                 <span class="text-green">FULL-STACK</span>
-                <span class="text-green">● WP CUSTOM</span>
+                <span class="badges-projet text-green">● WP CUSTOM</span>
               </div>
               <h3>Thème sur-mesure WP</h3>
               <p>
                 Développement complet d'un thème From Scratch en HTML5/CSS3/PHP,
                 intégration d'ACF et création de plugins personnalisés.
               </p>
-              <div class="aperçu-projet">
+              <div>
                 <a target="_blank" href="https://st9.fij-dev.be/mangue/">
                   <img
                     src="images/diogene.png"
@@ -371,6 +371,82 @@
                 /></a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="titre-contact">
+          <span class="titre-contact text-green">CONTACT</span>
+        </div>
+
+        <div class="row mt-5">
+          <!-- COLONNE GAUCHE : INFOS DE CONTACT -->
+          <div class="col-md-5 mb-5">
+            <div class="liste-contact">
+              <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:manouachnabilpro@gmail.com"
+                  >manouachnabilpro@gmail.com</a
+                >
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+32000000000">+32 486036426</a>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Bruxelles, Belgique</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- COLONNE DROITE : FORMULAIRE -->
+          <div class="col-md-7">
+            <form class="form-contact">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Nom</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Votre nom"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Votre adresse email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Objet</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Le sujet de votre message"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Votre message ici..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-submit">
+                <i class="fa-solid fa-paper-plane"></i> Envoyer le message
+              </button>
+            </form>
           </div>
         </div>
       </div>

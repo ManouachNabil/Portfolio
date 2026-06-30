@@ -296,11 +296,15 @@ position: absolute;
 #competences .container, #projets .container {
   width: 100%;
 }
-.titre-competences, .titre-projets {
+.titre-competences, .titre-projets, .titre-contact{
   margin-top: 50px;
   margin-bottom: 150px;
   font-size: 2rem;
   font-family: "Orbitron", sans-serif;
   letter-spacing: 3px;
   color: var(--neon-green);
+}
+.badges-projet {
+  display: flex;
+  justify-content: flex-end;
 }
