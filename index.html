@@ -19,7 +19,7 @@
   <body>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#accueil">
+        <a class="navbar-brand" href="#hero">
           <img src="images/logo.png" alt="Logo Nabil" class="nav-logo" />
         </a>
 
@@ -55,7 +55,11 @@
           </ul>
         </div>
 
-        <a class="btn btn-outline-green">
+        <a
+          href="fichier/CV pro Nabil Manouach 2026.pdf"
+          download="CV pro Nabil Manouach 2026.pdf"
+          class="btn btn-outline-green"
+        >
           <i class="fa-solid fa-download fa-beat fa-xs slow-icon"></i>
           Télécharger CV
         </a>
@@ -294,6 +298,14 @@
                 <img src="skills logo/git-icon-svgrepo-com.svg" alt="GIT" />
                 <span>GIT</span>
               </div>
+
+              <div class="item-techno">
+                <img
+                  src="skills logo/github-142-svgrepo-com.svg"
+                  alt="GITHUB"
+                />
+                <span>GITHUB</span>
+              </div>
             </div>
           </div>
         </div>
@@ -302,6 +314,9 @@
 
     <section id="projets">
       <div class="container">
+        <div class="titre-projets">
+          <span>MES PROJETS</span>
+        </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="carte-projets">
@@ -324,11 +339,15 @@
               <p>Création d'un site complet sous WordPress avec Elementor.</p>
 
               <div class="aperçu-projet">
-                <img
-                  src="images/vert-tige.png"
-                  alt="Aperçu site"
-                  style="width: 100%; border-radius: 10px"
-                />
+                <a
+                  target="_blank"
+                  href="https://st9.fij-dev.be/fleuriste-cms/fleuriste-cms/"
+                >
+                  <img
+                    src="images/vert-tige.png"
+                    alt="Aperçu site"
+                    style="width: 100%; border-radius: 10px"
+                /></a>
               </div>
             </div>
           </div>
@@ -343,15 +362,13 @@
                 Développement complet d'un thème From Scratch en HTML5/CSS3/PHP,
                 intégration d'ACF et création de plugins personnalisés.
               </p>
-
-              <div class="aperçu-video">
-                <video
-                  src="videos/demo-custom-wp.mp4"
-                  autoplay
-                  loop
-                  muted
-                  playsinline
-                ></video>
+              <div class="aperçu-projet">
+                <a target="_blank" href="https://st9.fij-dev.be/mangue/">
+                  <img
+                    src="images/diogene.png"
+                    alt="Aperçu site"
+                    style="width: 100%; border-radius: 10px"
+                /></a>
               </div>
             </div>
           </div>
