@@ -228,6 +228,15 @@ position: absolute;
   max-width: 80px;
   object-fit: contain;
   margin-bottom: 12px;
+  filter: grayscale(100%);
+  opacity: 0.6;                 /* Optionnel : rend l'icône un poil transparente pour un effet plus discret */
+  transition: all 0.3s ease;   
+}
+
+/* L'EFFET AU SURVOL : */
+.item-techno:hover img {
+  filter: grayscale(0%);        /* Redonne la vraie couleur au logo */
+  opacity: 1;                   /* Repasse l'opacité au maximum */
 }
 
 .item-techno span {
@@ -314,12 +323,24 @@ position: absolute;
    ========================= */
 
 .contact-item {
-  text-decoration: none;
-  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 15px;
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
-.contact-item:hover {
+
+
+.contact-item i, 
+.contact-item a, 
+.contact-item span {
+  color: gray;
+  text-decoration: none;
+}
+
+.contact-item:hover i,
+.contact-item:hover a,
+.contact-item:hover span {
   color: var(--neon-green);
 }
 
@@ -332,6 +353,7 @@ position: absolute;
 .form-control {
   background-color: var(--bg-dark);
   border: 1px solid gray;
+  color: white;
 }
 
 .form-control:focus {
