@@ -1,6 +1,6 @@
 :root {
-    --bg-dark: #121214;       /* Fond très sombre */
-    --neon-green: #00ffa3;    /* Couleur code/aurore/neon */
+    --bg-dark: #121214;
+    --neon-green: #00ffa3;
 }
 
 body {
@@ -16,12 +16,10 @@ body {
     align-items: center;
 }
 
-/* A utiliser pour les textes en vert */
 .text-green {
     color: var(--neon-green);
 }
 
-/* A utiliser pour les boutons vert */
 .btn-green {
     background-color: var(--neon-green);
     color: var(--bg-dark);
@@ -95,6 +93,16 @@ body {
     object-fit: cover;
     border: 2px solid var(--neon-green);
 }
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0d0d0f;
+  border-bottom: 1px solid rgba(0, 255, 163, 0.2);
+  z-index: 1000;
+}
 /* ======================
         SECTION HERO
    ====================== */
@@ -165,11 +173,11 @@ position: absolute;
   content: '';
   flex: 1;
   height: 1px;
-  background: #1a1a1a;
+  background: var(--bg-dark);
 }
 
 .carte-apropos {
-  background: #111;
+  background: var(--bg-dark);
   border: 2px solid #666666;
   border-radius: 12px;
   padding: 24px 20px;
@@ -182,6 +190,7 @@ position: absolute;
 
 .carte-apropos:hover {
   border-color: var(--neon-green);
+  box-shadow: 0 0 20px rgba(0, 255, 163, 0.15);
 }
 
 .carte-apropos i {
@@ -197,9 +206,6 @@ position: absolute;
   border-radius: 4px;
   margin-top: auto;
   align-self: flex-start;
-}
-.carte-apropos:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 163, 0.15);
 }
 
 /* =========================
@@ -229,14 +235,10 @@ position: absolute;
   object-fit: contain;
   margin-bottom: 12px;
   filter: grayscale(100%);
-  opacity: 0.6;                 /* Optionnel : rend l'icône un poil transparente pour un effet plus discret */
-  transition: all 0.3s ease;   
 }
 
-/* L'EFFET AU SURVOL : */
 .item-techno:hover img {
   filter: grayscale(0%);        /* Redonne la vraie couleur au logo */
-  opacity: 1;                   /* Repasse l'opacité au maximum */
 }
 
 .item-techno span {
@@ -263,7 +265,7 @@ position: absolute;
   border: 1px solid var(--neon-green);
   border-radius: 12px;
   padding: 20px;
-  max-width: 320px;
+  max-width: 350px;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -274,7 +276,9 @@ position: absolute;
 .carte-projets h3, .carte-projets p {
   margin: 10px 0;
 }
-
+.img-encours {
+  filter: brightness(0.2);
+}
 .widget-meteo {
   background-color: #050505;
   border-radius: 10px;
@@ -293,7 +297,6 @@ position: absolute;
 
 .widget-meteo div:last-child {
   color: var(--neon-green);
-  text-transform: capitalize;
   font-size: 15px;
 }
 #competences, #projets, #contact {
@@ -369,4 +372,63 @@ position: absolute;
 }
 .form-label {
   color: var(--neon-green);
+}
+
+/* ======================
+        SECTION FOOTER
+   ====================== */
+.portfolio-footer {
+  background-color: #0d0d0f;
+  border-top: 1px solid rgba(0, 255, 163, 0.2);
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.portfolio-footer p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.portfolio-footer small {
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 5px;
+  color: #666666 !important;
+}
+
+/* ======================
+        MEDIA QUERY
+   ====================== */
+
+@media (max-width: 768px) {
+
+  #hero {
+    padding-top: 160px !important;
+    height: auto !important;       
+  }
+  .hero-avatar {
+    width: 100% !important;
+    max-width: 380px !important;
+    height: auto !important;
+    margin-bottom: 20px !important;
+  }
+  .btn-gap {
+    margin-bottom: 30px !important; 
+    flex-direction: column;
+    gap: 15px !important;
+  }
+  .mouse-down {
+    display: none !important;
+  }
+  .nuage-logos {
+    gap: 30px !important;
+    margin: 20px 10px !important;
+  }
+  .titre-competences, .titre-projets, .titre-contact {
+    margin-bottom: 50px !important;
+    margin-top: 30px !important;
+  }
 }

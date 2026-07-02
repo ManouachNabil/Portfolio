@@ -10,7 +10,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Portfolio Web Developer Junior</title>
@@ -103,8 +102,6 @@
         </div>
       </div>
 
-      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
       <div class="mouse-down">
         <lottie-player
           src="js/mouse-down.json"
@@ -128,9 +125,7 @@
         <div class="row mt-5 mb-5">
           <div class="col-lg-4 mb-4">
             <h3>Manouach Nabil</h3>
-            <p class="apropos-role">
-              Développeur web junior<br />Bruxelles, Belgique
-            </p>
+            <p>Développeur web junior<br />Bruxelles, Belgique</p>
           </div>
 
           <div class="col-lg-8">
@@ -320,9 +315,9 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="carte-projets">
-              <div class="badges">
+              <div>
                 <span class="text-green">API LIVE</span>
-                <span class="badges-projet text-green">● LIVE</span>
+                <span class="live badges-projet text-green">● LIVE</span>
               </div>
               <h3>Widget Météo</h3>
               <p>Intégration OpenWeatherMap en jQuery avec cache cookies</p>
@@ -331,7 +326,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="carte-projets">
-              <div class="badges">
+              <div>
                 <span class="text-green">CMS</span>
                 <span class="badges-projet text-green">● LOCAL</span>
               </div>
@@ -353,19 +348,24 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="carte-projets">
-              <div class="badges">
+              <div>
                 <span class="text-green">FULL-STACK</span>
                 <span class="badges-projet text-green">● WP CUSTOM</span>
               </div>
               <h3>Thème sur-mesure WP</h3>
               <p>
-                Développement complet d'un thème From Scratch en HTML5/CSS3/PHP,
-                intégration d'ACF et création de plugins personnalisés.
+                Développement complet d'un thème en HTML/CSS/PHP, intégration
+                d'ACF et création de plugins personnalisés. <br />(EN COURS)
               </p>
               <div>
-                <a target="_blank" href="https://st9.fij-dev.be/mangue/">
+                <a
+                  target="_blank"
+                  href="https://st9.fij-dev.be/mangue/"
+                  title="Site en cours de développement"
+                >
                   <img
                     src="images/diogene.png"
+                    class="img-encours"
                     alt="Aperçu site"
                     style="width: 100%; border-radius: 10px"
                 /></a>
@@ -379,13 +379,13 @@
     <section id="contact">
       <div class="container">
         <div class="titre-contact">
-          <span class="titre-contact text-green">CONTACT</span>
+          <span class="text-green">CONTACT</span>
         </div>
 
         <div class="row mt-5">
           <!-- COLONNE GAUCHE : INFOS DE CONTACT -->
           <div class="col-md-5 mb-5">
-            <div class="liste-contact">
+            <div>
               <div class="contact-item">
                 <i class="fa-brands fa-linkedin"></i>
                 <a
@@ -470,9 +470,20 @@
       </div>
     </section>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <footer class="portfolio-footer">
+      <div class="container text-center">
+        <p class="mb-0">
+          © 2026 — <span class="text-green">Manouach Nabil</span>. Tous droits
+          réservés.
+        </p>
+        <small class="text-muted">Version 1</small>
+      </div>
+    </footer>
     <script src="js/jquery-4.0.0.min.js"></script>
     <script src="js/js.cookie.min.3.0.5.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/meteo.js"></script>
   </body>
 </html>
